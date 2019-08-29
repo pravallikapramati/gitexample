@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<test name="My first test">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="sanity" />
+				<exclude name="regression" />
+
+			</run>
+		</groups>
+
+		<packages>
+
+			<package name="com.examples" />
+		</packages>
+	</test>
+
+
+</suite>
